@@ -1,0 +1,365 @@
+@media only screen and (max-width: 375px) and (min-width:280px){
+
+    main{
+        width: 375px;
+    
+    
+    }
+    
+    
+    body{
+    background-color:#F8E9DD;
+    
+    }
+    
+    .card-container{
+     position: absolute;
+     
+    }
+    
+    .card-head{
+        width: 343px;
+        height: 97px;
+        background-color: #EC755D;
+        border: none;
+        border-radius: 10px;
+    }
+    
+    
+    .card-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .content1{
+        margin-left: -2rem;
+        
+    }
+    
+
+    .content1 h4{
+        font-family: 'DM Sans', sans-serif;
+       font-style: normal;
+       font-weight: 400;
+       font-size: 15px;
+       line-height: 20px;
+       color: #FFFFFF;
+    }
+    .content1 h2{
+        font-family: 'DM Sans', sans-serif;       
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 31px;
+        color: #FFFFFF;
+        margin-top:-1rem;
+            }
+    
+    .content2{
+        margin-right:-2rem;
+    }
+    
+ 
+    .card-big{
+    width:343px;
+    height: 421px;
+    background-color: #FFFBF6;
+    margin-top: 1rem;
+    border-radius: 10px;
+    }
+    
+    
+    .top-text{
+     position: relative;
+     left: 1rem;
+     top: 1rem;
+    }
+    
+    .top-text span{
+font-family: 'DM Sans', sans-serif; 
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 31px;
+color: #382314;
+ } 
+      
+  
+
+  .bar-graph{
+    position: relative;
+    top: 2rem;
+  }
+
+
+    
+    .bars{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  
+    }
+    
+    .bars{
+      
+        margin-top: 3rem;
+    }
+    .bar1{
+        width: 33px;
+        height: 50px;
+        border-radius: 3px;
+        background-color: #EC755D;
+        margin-top: 3.5rem;
+       
+    }
+    .mon span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.3rem;
+    
+    }
+
+    .mon span{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+color: #92857A;
+       }
+    
+    .bar2{
+        width: 33px;
+        height: 100px;
+        background-color: #EC755D;
+        border-radius: 3px;
+       margin-top: 0.5rem;
+    }
+    
+    .tue span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.1rem;
+        
+        } 
+
+        .tue span{
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+            color: #92857A; 
+        }
+    
+    .bar3{
+        width: 33px;
+        height: 150px;
+        background-color: #76B5BC;
+        border-radius: 3px;
+       margin-top: -2.5rem;
+        
+    }
+    .wed span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.1rem;
+        
+    }
+   
+
+    .wed span{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+color: #92857A;
+    }
+    
+    .bar4{
+        width: 33px;
+        height: 89px;
+        background-color: #EC755D;
+        border-radius: 3px;
+        margin-top: 1rem;
+        
+    }
+    
+
+    .thu span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.4rem;
+    } 
+
+
+    .thu span{
+ font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+color: #92857A;
+    }
+    
+    .bar5{
+        width: 33px;
+        height: 67px;
+        border-radius: 3px;
+        background-color:  #EC755D;
+        margin-top: 2.5rem;
+        
+    } 
+
+    .fri span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.3rem;
+    }
+
+    .fri span{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+color: #92857A;
+    }
+    
+    .bar6{
+        width: 33px;
+        height: 124px;
+        border-radius: 3px;
+        background-color:  #EC755D;
+        margin-top: -1rem
+        
+    } 
+
+     .sat span{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.2rem;
+    }
+       .sat span{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+color: #92857A;
+       }
+
+     .bar7{
+        width: 33px;
+        height: 73px;
+        border-radius: 3px;
+        background-color:  #EC755D;
+        margin-top: 2.5rem;
+        
+    } 
+  .sun span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.9rem;
+}  
+
+.sun span{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+text-align: center;
+color: #92857A;
+}
+
+.vertical-line hr{
+    margin-top: 4rem;
+    width: 303px;
+    height: 2px;
+    background-color: #F8E9DD;
+    border: none;
+}
+
+  .last-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+   .last-text-left span{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+color: #92857A;
+   }
+   
+ .last-text-left span{
+    position: relative;
+    top:1rem;
+ } 
+
+
+  .last-text-left h1{
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 39px;
+color: #382314;
+  } 
+
+  .last-text-right h3{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+text-align: right;
+color: #382314
+  }  
+
+  .last-text-right span{
+    font-family: 'DM Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 20px;
+text-align: right;
+color: #92857A;
+  }
+
+
+  .last-text-right span{
+    position: relative;
+    bottom: 1rem;
+  }
+.last-text-right{
+  position: relative;
+  top: 1rem;
+}
+
+.last-text-left{
+    position: relative;
+    top: 0.5rem;
+}
+
+    }
