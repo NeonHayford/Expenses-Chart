@@ -1,0 +1,143 @@
+*{
+    font-family: var(--font-type);
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+    --font-type: url(https://fonts.google.com/specimen/DM+Sans), 'DM Sans';
+}
+
+h1, h2,h3, h4, h5, h6{
+    font-family: DM Sans;
+}
+
+body{
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.container{
+    position: relative;
+    width: 540px;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container1{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    /* padding: 39px; */
+    width: 540px;
+    height: 125px;
+    border-radius: 20px;
+    background-color: var(--soft-red);
+}
+.container1 .container-card{
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-card label{
+    font-family: DM Sans;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.container-card h5{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.container1 label, .container1 h5{
+    color: var(--very-pale-orange);
+}
+
+.container2{
+    width: 540px;
+    height: 511px;
+    border-radius: 20px;
+    /* align-content: center;
+    padding: 32px 40px; */
+    background-color: var(--very-pale-orange);
+}
+.container2 .container-card{
+    background-color: brown;
+    border: 1px solid black;
+    margin: 32px 40px;
+}
+
+div > h6{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+hr{
+    height: 2px;
+    background-color: var(--cream);
+    border: none;
+    border-radius: 1px;
+    margin: 32px 0;
+}
+
+.f-container{
+    height: 87px;
+}
+.f-container label, .f-container> div > div label{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.f-container div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-container div > h5{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.f-container> div > div{
+    flex-direction: column;
+    width: 133px;
+}
+
+.f-container> div > div h6{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0px;
+    text-align: right;
+    align-self: flex-end;
+
+}
