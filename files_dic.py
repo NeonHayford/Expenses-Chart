@@ -1,4 +1,7 @@
-[
+from matplotlib import 
+import json 
+
+data_dic = '''[
     {
       "day": "mon",
       "amount": 17.45
@@ -28,4 +31,18 @@
       "amount": 25.48
     }
 ]
+'''
 
+with open('data.json', 'r') as file:
+    text = file.read()
+
+
+data = json.loads(data_dic)
+print(data)
+
+
+# import json 
+# with open('data.json', 'r') as file:
+#     data = json.load(file)
+
+#     print(data)
