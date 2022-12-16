@@ -1,4 +1,4 @@
-from matplotlib import 
+from matplotlib import pyplot as plt
 import json 
 
 data_dic = '''[
