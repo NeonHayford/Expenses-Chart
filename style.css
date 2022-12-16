@@ -2,6 +2,7 @@
 
     main{
         width: 375px;
+        
     
     
     }
@@ -13,7 +14,10 @@
     }
     
     .card-container{
-     position: absolute;
+        top:35%;
+        left: 50%;
+        transform: translate3d(-50%,-50%, 0);
+        position: absolute;
      
     }
     
