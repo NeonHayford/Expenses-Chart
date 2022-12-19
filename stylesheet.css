@@ -12,6 +12,7 @@
     --cream: hsl(27, 66%, 92%);
     --very-pale-orange: hsl(33, 100%, 98%);
     --font-type: 'DM Sans';
+    --height: 15;
 }
 
 h1, h2,h3, h4, h5, h6{
@@ -105,17 +106,17 @@ hr{
 }
 
 .chart{
-    position: relative;
+    border: 2px dashed brown;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 66px;
+    margin-top: 26px;
     /* border: 1px solid black; */
 }
 
 .chart > div{
 
-    height: 200px;
+    height: 240px;
 }
 
 .chart_dic{
@@ -189,5 +190,12 @@ hr{
     letter-spacing: 0px;
     text-align: right;
     align-self: flex-end;
+}
 
+.bar{
+    z-index: 10;
+}
+
+.bar p{
+    z-index: -2;
 }
