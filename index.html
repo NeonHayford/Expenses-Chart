@@ -50,9 +50,9 @@
                        <script>
                         
                         const data = {
-                          labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                          labels: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'],
                           datasets: [{
-                            label: 'USD $',
+                            label: '',
                             data: [ 17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
                             backgroundColor: [
                               'rgba(236, 117, 93, 1)',
@@ -72,7 +72,10 @@
                             //   'rgba(255, 159, 64, 1)',
                             //   'rgba(0, 0, 0, 1)'
                             // ],
-                            borderWidth: 0
+                            borderWidth: 0,
+                            borderRadius: 5,
+                            borderSkipped: false,
+                            barThickness: 33
                             
                           }]
                         };
@@ -84,7 +87,34 @@
                           options: {
                             scales: {
                               y: {
-                                beginAtZero: true
+                                beginAtZero: true,
+                                ticks: {
+                                 display: false
+                                },
+                                 grid: {
+                                  borderColor : 'green', 
+                                  drawOnChartArea:false,
+                                  borderWidth: 3,
+                                  drawBorder: false,
+                                  display: false
+
+                                  
+                                 }
+                              },
+                              x: {
+                                grid: {
+                                  drawBorder: false,
+                                  drawOnChartArea: false,
+                                  display: false,
+                                   lineWidth: 5
+                                }
+                              }
+                            },
+                            plugins: {
+                              legend: {
+                                labels: {
+                                  boxWidth: 0
+                                }
                               }
                             }
                           }
