@@ -11,7 +11,7 @@
     --medium-brown: hsl(28, 10%, 53%);
     --cream: hsl(27, 66%, 92%);
     --very-pale-orange: hsl(33, 100%, 98%);
-    --font-type: url(https://fonts.google.com/specimen/DM+Sans), 'DM Sans';
+    --font-type: 'DM Sans';
 }
 
 h1, h2,h3, h4, h5, h6{
@@ -33,6 +33,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.b-color{
+    color: var(--dark-brown);
 }
 
 .container1{
@@ -100,11 +104,52 @@ hr{
     margin: 32px 0;
 }
 
-.chart-container{
-    margin-top: 66px;
+.chart{
+    position: relative;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 66px;
+    /* border: 1px solid black; */
+}
+
+.chart > div{
+
     height: 200px;
-    border: 0.5px solid black;
+}
+
+.chart_dic{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrapper{
+    
+    width: 14%;
+    height: 90%;
+}
+
+.value{
+    border-radius: 5px;
+    width: 50.36px;
+    height: 200px;
+    background-color: /*var(--soft-red)*/ var(--cyan);
+}
+
+.title{
+    color: var(--dark-brown);
+}
+
+.p-label{
+    border-radius: 5px;
+    color: var(--very-pale-orange);
+    background-color: var(--dark-brown);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 0;
 }
 
 .f-container{
