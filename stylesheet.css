@@ -111,11 +111,7 @@ hr{
     display: flex;
     justify-content: space-between;
     margin-top: 26px;
-    /* border: 1px solid black; */
-}
-
-.chart > div{
-
+    /* border: 1px solid black; */ 
     height: 240px;
 }
 

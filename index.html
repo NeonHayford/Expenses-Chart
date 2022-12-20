@@ -37,7 +37,7 @@
                 <div>
                     <h6 class="b-color">Spending - Last 7 days</h6>
                 </div>
-                <div>
+                <div class="chart">
                     <canvas id="myChart"></canvas>
                 </div>
                 <script>
@@ -79,30 +79,37 @@
                       type: 'bar',
                       data,
                       options: {
+                        
                         scales: {
                           y: {
                             beginAtZero: true,
                             backgroundColor: null,
       
                             ticks: {
-                             display: false
+                             display: false,
+                            
                             },
                              grid: {
+                              drawTicks:false,
                               borderColor : 'white', 
                               drawOnChartArea:false,
                               borderWidth: 10,
                               drawBorder: false,
-                              display: false
-
-                              
+                              display: false,
                              }
                           },
                           x: {
+                            ticks:{
+                                display: false,
+                                // display: true,
+                            }, 
+
                             grid: {
+                              drawTicks:false,
                               drawBorder: false,
                               drawOnChartArea: false,
                               display: false,
-                                lineWidth: 5,
+                              lineWidth: 5,
                             }
                           }
                         },
