@@ -1,97 +1,123 @@
-const ctx=document.getElementById('Chart');
-fetchData();
-   async function fetchData() {
-      const res = await fetch('data.json');
-      const data = await res.json();
-      console.log(data);
-      length = data.length;
-      console.log(length);
-      labels = [];
-      values = [];
-   for (i = 0; i < data.length; i++) {
-         labels.push(data[i].day);
-         values.push(data[i].amount);
-        /*console.log(values[i])*/
+const data = {
+        labels: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'],
+        datasets: [{
+          label: 'USD $',
+          fontFamily: 'DM Sans',
+      
+          data: [ 17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
+          backgroundColor: [
+            'rgba(236, 117, 93, 1)',
+            'rgba(236, 117, 93, 1)',
+            'rgba(118, 181, 188, 1)',
+            'rgba(236, 117, 93, 1)',
+            'rgba(236, 117, 93, 1)',
+            'rgba(236, 117, 93, 1)',
+            'rgba(236, 117, 93, 1)'
+          ],
+          borderWidth: 0,
+          borderRadius: 5,
+          borderSkipped: false,
+          barThickness: 33
+          
+        }]
       };
-      new Chart(ctx, {
-         type: 'bar',
-         data: {
-            labels: labels,
-            datasets: [
-               {
-                  label:'',
-                 backgroundColor: [
-                     'hsl(10, 79%, 65%)',
-                'hsl(10, 79%, 65%)',
-                'hsl(186, 34%, 60%)',
-               'hsl(10, 79%, 65%)',
-                'hsl(10, 79%, 65%)',
-                'hsl(10, 79%, 65%)',
-                'hsl(10, 79%, 65%)'],
-                  data: values
-               }
-            ]
-         },
-         options: {
-             responsive: true,
-             interaction: {
-             intersect: false
-         },
-         plugins: {
-           title: {
-           display: true,
-           align: 'start',
-           text: 'Spending - Last 7 days',
-           font: {
-              size: 25
-          }, 
-        color: 'hsl(25, 47%, 15%)'
-      },
-      legend: {
-      display: false
-      },
-     tooltip:{
-         
-        displayColors: false,
-       
-        callbacks: {
-             title:()=>{
-                      display:false
-              },
-/*from Chart js tutorial: adding '$' to label */
-              label: function(context) {
-                        let label = context.dataset.label || '';
+  
+      // config 
+   const config = {
+     type: 'bar',
+     data,
+     options: {
+       scales: {
+         y: {
+           beginAtZero: true,
+   
+           ticks: {
+            display: false
+           },
+            grid: {
+             borderColor : 'green', 
+             drawOnChartArea:false,
+             borderWidth: 3,
+             drawBorder: false,
+             display: false
 
-                        if (label) {
-                            label += ': ';
-                        }
-                        if (context.parsed.y !== null) {
-                            label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
-                        }
-                        return label;
-                    } 
-        }
-     }
-        },
-    scales: {
-      x: {
-         
-        stacked: true,
-         grid: {
-            display: false
-        }
-      },
-      y: {
-        stacked: true,
-        ticks: {
-            display:false,
-         
-        },
-        grid: {
-            display: false
-        }
-      }
-    }
+             
+            }
+         },
+         x: {
+           grid: {
+             drawBorder: false,
+             drawOnChartArea: false,
+             display: false,
+              lineWidth: 5
+           }
          }
-      })
-   }
+       },
+       plugins: {
+         legend: {
+           labels: {
+             boxWidth: 0
+           }
+         }
+       }
+     }
+   };
+   
+   // render init block
+   const myChart = new Chart(
+     document.getElementById('myChart'),
+     config
+   );
+
+
+   <!-- <div>
+                        <p class="p-label"  aria-hidden="true">17.45</p>
+                        <div class="chart_dic">
+                            <div class="value"></div>
+                            <div class="title">Mon</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="p-label"  aria-hidden="true">34.91</p>
+                        <div class="chart_dic">
+                            <div class="value"></div>
+                            <div class="title">Tue</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="p-label"aria-hidden="true">52.46</p>
+                        <div class="chart_dic">
+                            <div class="value"></div>
+                            <div class="title">Wed</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="p-label" aria-hidden="true">31.07</p>
+                        <div class="chart_dic">
+                            <div class="value"></div>
+                            <div class="title">Thu</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="p-label" aria-hidden="true">23.39</p>
+                        <div class="chart_dic">
+                            <div class="value"></div>
+                            <div class="title">Fri</div>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="p-label" aria-hidden="true">43.28</p>
+                        <div class="chart_dic">
+                            <div class="value"></div>
+                            <div class="title">Sat</div>
+                        </div>
+                        
+                    </div>
+                     -->
+                    <!-- <div>
+                        <p class="p-label" aria-hidden="True">25.48</p>
+                        <div class="chart_dic">
+                            <div class="value"></div>
+                            <div class="title">Sun</div>
+                        </div>
+                    </div> -->
