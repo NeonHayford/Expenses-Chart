@@ -106,15 +106,14 @@ hr{
 }
 
 .chart{
-    border: 2px dashed brown;
+    /* border: 2px dashed brown; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 26px;
-    /* border: 1px solid black; */ 
     height: 240px;
 }
-
+/* 
 .chart_dic{
     position: relative;
     display: flex;
@@ -133,12 +132,12 @@ hr{
     border-radius: 5px;
     width: 50.36px;
     height: 200px;
-    background-color: /*var(--soft-red)*/ var(--cyan);
+    background-color: var(--cyan);
 }
 
 .title{
     color: var(--dark-brown);
-}
+} */
 
 .p-label{
     border-radius: 5px;
