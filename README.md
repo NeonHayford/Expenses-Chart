@@ -9,6 +9,7 @@ The designs were created to the following widths:
 - Mobile: 375px
 - Desktop: 1440px
 
+
 ## color
 ### Primary
 - Soft red: hsl(10, 79%, 65%)
@@ -21,10 +22,11 @@ The designs were created to the following widths:
 - Very pale orange: hsl(33, 100%, 98%)
 
 
+
 ## font size
 - Font size: 18px
 
-### Font
+### Font family
 
 - Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
 - Weights: 400, 700
