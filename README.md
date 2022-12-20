@@ -22,7 +22,6 @@ The designs were created to the following widths:
 - Very pale orange: hsl(33, 100%, 98%)
 
 
-
 ## font size
 - Font size: 18px
 
