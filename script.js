@@ -23,44 +23,44 @@ const data = {
   };
 
   // config 
-const config = {
- type: 'bar',
- data,
- options: {
-   scales: {
-     y: {
-       beginAtZero: true,
+    const config = {
+    type: 'bar',
+    data,
+    options: {
+    scales: {
+        y: {
+        beginAtZero: true,
 
-       ticks: {
-        display: false
-       },
+        ticks: {
+            display: false
+        },
+            grid: {
+            borderColor : 'green', 
+            drawOnChartArea:false,
+            borderWidth: 3,
+            drawBorder: false,
+            display: false
+
+            
+            }
+        },
+        x: {
         grid: {
-         borderColor : 'green', 
-         drawOnChartArea:false,
-         borderWidth: 3,
-         drawBorder: false,
-         display: false
-
-         
+            drawBorder: false,
+            drawOnChartArea: false,
+            display: false,
+            lineWidth: 5
         }
-     },
-     x: {
-       grid: {
-         drawBorder: false,
-         drawOnChartArea: false,
-         display: false,
-          lineWidth: 5
-       }
-     }
-   },
-   plugins: {
-     legend: {
-       labels: {
-         boxWidth: 0
-       }
-     }
-   }
- }
+        }
+    },
+    plugins: {
+        legend: {
+        labels: {
+            boxWidth: 0
+        }
+        }
+    }
+    }
 };
 
 // render init block
