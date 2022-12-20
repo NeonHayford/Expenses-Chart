@@ -1,4 +1,6 @@
 # Expenses-Chart
+## Deployed Page {Expenses Chart}
+
 
 # Front-end Style Guide
 
@@ -26,6 +28,4 @@ The designs were created to the following widths:
 
 - Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
 - Weights: 400, 700
-
-## Deployed Page {Expenses Chart}
 
