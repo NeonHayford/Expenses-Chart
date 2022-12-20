@@ -34,12 +34,12 @@ const data = {
         ticks: {
             display: false
         },
-            grid: {
-            borderColor : 'green', 
-            drawOnChartArea:false,
-            borderWidth: 3,
-            drawBorder: false,
-            display: false
+        grid: {
+        borderColor : 'green', 
+        drawOnChartArea:false,
+        borderWidth: 3,
+        drawBorder: false,
+        display: false
 
             
             }
