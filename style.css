@@ -1,15 +1,8 @@
-@media only screen and (max-width: 375px) and (min-width:280px){
-
-    main{
-        width: 375px;
-        
-    
-    
-    }
-    
+@media only screen and (max-width: 414px) and (min-width:280px){
     
     body{
     background-color:#F8E9DD;
+    width: 375px;
     
     }
     

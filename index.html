@@ -21,157 +21,80 @@
   </style>
 </head>
 <body>
-
-<main>
-  <div class="card-container">
-    <div class="card1">
-        <div class="card-head">
-            <div class="card-content">
-                <div class="content1">
-                    <h4>My balance</h4>
-                    <h2>$921.48</h2>
-                </div>
-                <div class="content2">
-                    <img src="./images/logo.svg"/>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="card-2">
-         <div class="card-big">
-                 <div class="card-big-content">
-                      <div class="top-text">
-                        <span>Spending-Last 7 days</span>
-                      </div>
-
-                      
-                      
-                       <div> <canvas id="myChart"></canvas></div>
-                       <script>
-                        
-                        const data = {
-                          labels: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'],
-                          datasets: [{
-                            label: 'USD $',
-                            fontFamily: 'DM Sans',
-                        
-                            data: [ 17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
-                            backgroundColor: [
-                              'rgba(236, 117, 93, 1)',
-                              'rgba(236, 117, 93, 1)',
-                              'rgba(118, 181, 188, 1)',
-                              'rgba(236, 117, 93, 1)',
-                              'rgba(236, 117, 93, 1)',
-                              'rgba(236, 117, 93, 1)',
-                              'rgba(236, 117, 93, 1)'
-                            ],
-                            // borderColor: [
-                            //   'rgba(255, 26, 104, 1)',
-                            //   'rgba(54, 162, 235, 1)',
-                            //   'rgba(255, 206, 86, 1)',
-                            //   'rgba(75, 192, 192, 1)',
-                            //   'rgba(153, 102, 255, 1)',
-                            //   'rgba(255, 159, 64, 1)',
-                            //   'rgba(0, 0, 0, 1)'
-                            // ],
-                            borderWidth: 0,
-                            borderRadius: 5,
-                            borderSkipped: false,
-                            barThickness: 33
-                            
-                          }]
-                        };
-                    
-                        // config 
-                        const config = {
-                          type: 'bar',
-                          data,
-                          options: {
-                            scales: {
-                              y: {
-                                beginAtZero: true,
-          
-                                ticks: {
-                                 display: false
-                                },
-                                 grid: {
-                                  borderColor : 'green', 
-                                  drawOnChartArea:false,
-                                  borderWidth: 3,
-                                  drawBorder: false,
-                                  display: false
-
-                                  
-                                 }
-                              },
-                              x: {
-                                grid: {
-                                  drawBorder: false,
-                                  drawOnChartArea: false,
-                                  display: false,
-                                   lineWidth: 5
-                                }
-                              }
-                            },
-                            plugins: {
-                              legend: {
-                                labels: {
-                                  boxWidth: 0
-                                }
-                              }
-                            }
-                          }
-                        };
-                    
-                        // render init block
-                        const myChart = new Chart(
-                          document.getElementById('myChart'),
-                          config
-                        );
-                        </script>
-                      
-                      
-                     
-                      
-                      
-        
-       </div>
-       <div class="vertical-line">
-        <hr>
-       </div>
-
-       <div class="last-text">
-          <div class="last-text-left">
-             <span> Total this month</span>
-             <h1>$478.33</h1>
+  <div class="container">
+    <div class="card-container">
+      <div class="card1">
+          <div class="card-head">
+              <div class="card-content">
+                  <div class="content1">
+                      <h4>My Balance</h4>
+                      <h2>$921.48</h2>
+                  </div>
+                  <div class="content2">
+                      <img src="./images/logo.svg"/>
+                  </div>
+              </div>
           </div>
-           <div class="last-text-right">
-              <h3>+2.4%</h3>
-              <span>from last month</span>
-           </div>
-       </div>
-    </div>
-         
- 
-    </div>
-
-
-
-</div>
-
-
-
-
-
-
-
-</main>
-
-
-
-
-
+      </div>
+      <div class="card-2">
+           <div class="card-big">
+                   <div class="card-big-content">
+                        <div class="top-text">
+                          <span>Spending-Last 7 days</span>
+                        </div>
+  
+                        
+                        
+                         <div> <canvas id="myChart"></canvas></div>
+                         <script src="/expenses-chart/script.js">
+  
+                         </script>
+                        
+                        
+                       
+                        
+                        
+          
+         </div>
+         <div class="vertical-line">
+          <hr>
+         </div>
+  
+         <div class="last-text">
+            <div class="last-text-left">
+               <span> Total this month</span>
+               <h1>$478.33</h1>
+            </div>
+             <div class="last-text-right">
+                <h3>+2.4%</h3>
+                <span>from last month</span>
+             </div>
+         </div>
+      </div>
+           
+   
+      </div>
+  
+  
   
   </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    </div>
+  </div>
+
+
 </body>
 </html>
