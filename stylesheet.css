@@ -16,7 +16,7 @@
 }
 
 h1, h2,h3, h4, h5, h6{
-    font-family: DM Sans;
+    font-family: 'DM Sans';
 }
 
 body{
@@ -24,11 +24,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 95vh;
+    height: 100vh;
 }
 
 .container{
-    position: relative;
     width: 540px;
     height: 660px;
     display: flex;
