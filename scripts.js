@@ -1,7 +1,7 @@
 const data = {
     labels: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'],
     datasets: [{
-      label: 'USD $',
+      label: '',
       fontFamily: 'DM Sans',
   
       data: [ 17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
@@ -55,7 +55,7 @@ const data = {
             drawBorder: false,
             drawOnChartArea: false,
             display: false,
-            lineWidth: 5,
+            lineWidth: 0,
           }
         }
       },
@@ -63,9 +63,9 @@ const data = {
         legend: {
           labels: {
             font: {
-              fontFamily:"'DM Sans'",
+              fontFamily:'DM Sans',
             },
-            boxWidth: 0
+            boxWidth: 0,
           }
         }
       }
