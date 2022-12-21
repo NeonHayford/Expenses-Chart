@@ -28,10 +28,13 @@ const data = {
     options: {
       
       scales: {
+
+        
         y: {
           beginAtZero: true,
           backgroundColor: null,
-
+          display:false,
+            
           ticks: {
            display: false,
           
@@ -45,6 +48,7 @@ const data = {
            }
         },
         x: {
+            // display:false,
           ticks:{
               display: true,
               // display: true,
