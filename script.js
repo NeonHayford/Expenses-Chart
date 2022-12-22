@@ -1,7 +1,7 @@
 const data = {
     labels: ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'],
     datasets: [{
-      label: 'USD $',
+      label: '$',
       fontFamily: 'DM Sans',
   
       data: [ 17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48],
@@ -24,9 +24,10 @@ const data = {
       //   'rgba(0, 0, 0, 1)'
       // ],
       borderWidth: 0,
+      outerHeight: 177,
       borderRadius: 5,
       borderSkipped: false,
-      barThickness: 33
+      barThickness: 33,
       
     }]
   };
@@ -73,6 +74,7 @@ const data = {
     }
   };
 
+  window.matchMedia('(max-width: 600px)');
   // render init block
   const myChart = new Chart(
     document.getElementById('myChart'),
