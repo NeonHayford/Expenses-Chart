@@ -2,10 +2,12 @@
     
     body{
     background-color:#F8E9DD;
-    width: 375px;
+  
     
     }
-    
+    .container{
+        width: 375px;
+    }
     .card-container{
         top:35%;
         left: 50%;
@@ -63,6 +65,7 @@
     height: 421px;
     background-color: #FFFBF6;
     margin-top: 1rem;
+    /* padding: 20px; */
     border-radius: 10px;
     }
     
@@ -364,5 +367,11 @@ color: #92857A;
     top: 3rem;
 }
 
+/* .chart{
+    width: 303px;
+    
+} */
+
 
     }
+

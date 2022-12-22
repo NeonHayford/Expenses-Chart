@@ -39,6 +39,7 @@ const data = {
       scales: {
         y: {
           beginAtZero: true,
+          display: false,
 
           ticks: {
            display: false
