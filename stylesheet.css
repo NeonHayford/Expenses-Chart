@@ -51,7 +51,7 @@ body{
     border-radius: 20px;
     background-color: var(--soft-red);
 }
-.container1 .container-card{
+.container1  .container-card{
     width: 470px;
     display: flex;
     justify-content: space-between;
@@ -199,14 +199,24 @@ hr{
 
 @media (max-width: 375px){
     .container{
-        width: 343px;
-        height: 534px;
+        /* height: 534px; */
+        height: 550px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .container1{
         width: 343px;
         height: 97px;
         padding: 20px;
+    }
+
+    .container1  .container-card{
+        width: 429px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .container-card label{
