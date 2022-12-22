@@ -1,0 +1,35 @@
+@media only screen and (max-width: 275px){
+    .container{
+        width: 343px;
+        height: 534px;
+    }
+
+    .container1{
+        width: 343px;
+        height: 97px;
+        padding: 20px;
+    }
+
+    .container-card label{
+        font-size: 15px;
+    }
+
+    .container-card h5{
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    .container1 .container-card{
+        width: 319px;
+    }
+
+    .container2{
+        width: 343px;
+        height: 421px;
+    }
+
+    .container2 .container-card{
+        margin: 32px 20px;
+    }
+
+    }
