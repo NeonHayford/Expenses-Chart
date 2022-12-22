@@ -197,10 +197,10 @@ hr{
     top: 0.375rem;
 }
 
-@media (max-width: 375px){
-    .container{
-        /* height: 534px; */
-        height: 550px;
+@media only screen and (max-width: 414px) and (min-width: 218px){
+
+    /* .container{
+        height: 534px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -281,11 +281,10 @@ hr{
     }
 
     .chart{
-        /* border: 2px dashed brown; */
         width: 100%;
         display: flex;
         justify-content: space-between;
         margin-top: 26px;
         height: 177px;
-    }
+    } */
     }
