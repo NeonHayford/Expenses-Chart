@@ -1,6 +1,6 @@
 # Expenses-Chart
 ## Deployed Page {Expenses Chart}
-
+- https://neonhayford.github.io/Expenses-Chart/
 
 # Front-end Style Guide
 
