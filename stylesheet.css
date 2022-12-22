@@ -28,7 +28,7 @@ body{
 }
 
 .container{
-    border: 2px dashed maroon;
+/*     border: 2px dashed maroon; */
     width: 540px;
     height: 660px;
     display: flex;
@@ -41,7 +41,7 @@ body{
 }
 
 .container1{
-    border: 2px dashed maroon;
+/*     border: 2px dashed maroon; */
     display: flex;
     align-self: center;
     justify-content: center;
