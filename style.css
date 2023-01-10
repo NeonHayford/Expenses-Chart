@@ -70,12 +70,10 @@
     
         .mychart{
             height: 100%;
-            width: 50%; /*insert block*/ 
-            border: 2px dashed brown;
+            width: 50%;
         }
     
         .chart{
-            background-color:  grey;
             width: 100%;
             height: 200px;
             display: flex;
