@@ -14,10 +14,11 @@ const data = {
       'rgba(236, 117, 93, 1)',
       'rgba(236, 117, 93, 1)'
     ],
+    outerHeight: 177,
     borderWidth: 0,
     borderRadius: 5,
     borderSkipped: false,
-    barThickness: 50.36,
+    outerHeight: 177,
   }]
 };
 
@@ -26,10 +27,8 @@ const config = {
   type: 'bar',
   data,
   options: {
-    
+    maintainAspectRatio: false,
     scales: {
-
-      
       y: {
         beginAtZero: true,
         backgroundColor: null,
@@ -75,6 +74,13 @@ const config = {
     }
   }
 };
+
+// if(window.matchMedia('(max-width: 375px)').matches){
+//   data.datasets.barThickness = 33;
+// }
+// elif(window.matchMedia('(max-width:100%)').matches){
+//   data.datasets.barThickness = 50.36;
+// }
 
 // render init block
 const myChart = new Chart(
