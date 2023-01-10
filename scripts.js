@@ -18,7 +18,7 @@ const data = {
     borderWidth: 0,
     borderRadius: 5,
     borderSkipped: false,
-    outerHeight: 177,
+    // barThickness: 50.36,
   }]
 };
 
