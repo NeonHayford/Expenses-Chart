@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,17 +35,17 @@
         </div>
         <div class="container2">
             <div class="container-card">
-                <div>
+                <div class="container2-hd">
                     <h6 class="b-color">Spending - Last 7 days</h6>
                 </div>
-                <div class="chart">
-                    <canvas class="mychart" id="myChart"></canvas>
+                <div class="chart" id="chart">
+                    <canvas id="myChart"></canvas>
                 </div>
-                <script src="scripts.js" async></script>
-                <script src="script.js" async></script>
+                <script src="scripts.js"></script>
+                <!-- <script src="script.js"></script> -->
                 <hr/>
                 <div class="f-container b-color">
-                    <label for="">Total this month</label>
+                    <label class="figure-01" for="">Total this month</label>
                     <div>
                         <h5>$478.33</h5>
                         <div>
