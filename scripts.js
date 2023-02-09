@@ -89,8 +89,19 @@ async function main(){
             }
            },
           callbacks: {
-            title: function(context){
-              return '';
+            label: function(context) {
+              let label = context.dataset.label || '';
+  
+              if (label) {
+                  label += ': ';
+              }
+              if (context.parsed.y !== null) {
+                  label += new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(context.parsed.y);
+              }
+              return label;
+          },
+          title: function(title){
+            return '';
               // return console.log(context);
             },
           },
